@@ -5,6 +5,15 @@ This project documents how I’m building a centralized Windows telemetry pipeli
 
 The goal is to practice realistic SOC workflows: collecting endpoint signals, confirming end-to-end delivery, and building repeatable investigation pivots.
 
+## Dependencies
+This project is implemented on the segmented lab documented in:
+- P1-1-proxmox-segmentation-lab
+
+Hosts used (TBD during implementation):
+- Collector: TBD (AD-DC01 vs WEC01)
+- Endpoints: AD-WIN10 / AD-WIN11
+- Destinations: Wazuh / Elastic / Splunk Free
+
 ## Sanitization Note
 For safety, this repo uses **representative** hostnames/IP ranges and redacts any WAN/public IPs, domains/DDNS, VPN details, and secrets.  
 The architecture and workflow are accurate, but specific identifiers may be modified.
@@ -55,4 +64,5 @@ Diagram (planned): `diagrams/pipeline-diagram.png`
 - [ ] Confirm Wazuh ingestion (screenshot evidence)
 - [ ] Confirm Elastic ingestion (screenshot evidence)
 - [ ] Confirm Splunk ingestion (screenshot evidence)
-- [ ] Run validation tests + d
+- [ ] Run validation tests + document results
+
